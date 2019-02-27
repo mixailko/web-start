@@ -1,10 +1,14 @@
+*
+    box-sizing: border-box
+    
 body
-    font-family: sans-serif
+    font-family: 'Museo Sans Cyrl 300'
 img
     max-width: 100%
 .container 
     width: 1170px
-    margin: auto
+    margin-right: auto
+    margin-left: auto
 .button
     border-radius: 10px
     background-color: $main-colors
@@ -13,7 +17,21 @@ img
 @media (max-width: 1200px)
     .container
         width: 760px
-@media (max-width: 760px)
+@media (max-width: 768px)
     .container
         max-width: 580px
-        width: 95%
+        width: 90%
+.section
+    padding: 90px 0
+    &-title
+        font-size: 24px
+        font-family: 'Museo Sans Cyrl 700'
+    &-subtitle
+        display: block
+        font-size: 16px
+.input
+    border: 1px solid $border-input
+    padding: 26px 26px
+    font-size: 15px
+    border-radius: 10px
+
