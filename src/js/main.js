@@ -9,3 +9,7 @@ button.addEventListener('click', function(){
 close.addEventListener('click', function(){
     modal.classList.remove('modal_active');
 });
+
+modal.addEventListener(function(){
+    modal.classList.setTimeout(arguments.callee, 5);
+}, 5);
