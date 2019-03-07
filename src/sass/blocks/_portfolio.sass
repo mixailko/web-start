@@ -1,6 +1,7 @@
 .portfolio
     background: #f5f5f5 url('../img/fon_1.jpg') repeat-y center left
     background-size: 50%
+    padding-top: 85px
     &__title
         display: flex
         margin: auto
@@ -16,8 +17,11 @@
         justify-content: space-between
 .slider
     border: 0
-    &__image
+    &__image:last-child
         margin: auto
+        &:last-child
+            padding-right: 0
+    
 
 @media (max-width: 1200px)
     .portfolio

@@ -1,0 +1,123 @@
+.brif
+    background-image: url('../img/interview.jpg'), url('../img/form.jpg')
+    background-position: left center, center right
+    background-size: 50%, contain
+    background-repeat: repeat-y, no-repeat
+    padding-top: 98px
+    padding-bottom: 100px
+    &-block
+        display: flex
+    &__interview
+        flex-basis: 50%
+    &__form
+        flex-basis: 50%
+        margin-left: 213px
+        text-align: center
+    &__input
+        width: 100%
+        max-width: 370px
+        margin-bottom: 15px
+        height: 65px
+    &__button
+       height: 70px
+       width: 100%
+       max-width: 370px
+       margin-top: 10px
+.interview
+    padding-right: 71px
+    &__title
+        font-size: 22px
+        line-height: 33px
+        margin-bottom: 30px
+        margin-top: 0
+        font-family: "Museo Sans Cyrl 700"
+    &__subtitle
+        font-family: "Museo Sans Cyrl 300"
+        font-size: 16px
+        line-height: 45px
+        display: block
+        margin-bottom: 80px
+        margin-top: 0
+    &-list
+        list-style: none
+        padding: 0
+        &__item
+            display: flex
+            align-items: center
+            margin-bottom: 30px
+        &__counter
+            display: inline-block
+            width: 35px
+            height: 35px
+            margin-right: 32px
+            border: 2px solid #000000
+            border-radius: 50%
+            text-align: center
+            line-height: 35px
+            font-family: "Museo Sans Cyrl 700"
+            font-size: 14px
+        &__text
+            max-width: 400px
+            font-family: "Museo Sans Cyrl 700"
+            font-size: 18px
+.form
+    &__title
+        font-family: "Museo Sans Cyrl 700"
+        font-size: 22px
+        line-height: 33px
+        margin-bottom: 35px
+        margin-top: 0
+    &__subtitle
+        display: block
+        font-family: "Museo Sans Cyrl 300"
+        font-size: 16px
+        line-height: 35px
+        margin-bottom: 40px
+    &__description
+        display: block
+        margin-top: 30px
+        ont-family: "Museo Sans Cyrl 300"
+        font-size: 15px
+        line-height: 24px
+
+@media (max-width: 1200px)
+    .brif
+        &__form
+            padding-left: 30px
+            margin-left: 0
+    .interview
+        padding-right: 30px
+        &__title
+            font-size: 20px
+            margin-bottom: 15px
+        &__subtitle
+            margin-bottom: 30px
+        &-list
+            &__text
+                font-size: 14px
+                max-width: 300px
+            &__counter
+                margin-right: 20px
+                width: 35px
+                height: 35px
+    .form
+        &__title
+            font-size: 20px
+            margin-bottom: 15px
+        &__subtitle
+            margin-bottom: 30px
+
+@media (max-width: 768px)
+    .brif
+        background-image: url('../img/interview.jpg'), url('../img/form.jpg')
+        background-position: top center, center button
+        background-size: 100% 50%, cover
+        background-repeat: repeat-x, no-repeat
+        &-block
+            flex-direction: column
+        &__form
+            margin-top: 60px
+
+
+    
+
