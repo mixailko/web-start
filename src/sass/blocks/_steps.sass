@@ -2,7 +2,7 @@
     flex-basis: 20%
     text-align: center
     position: relative
-    padding-bottom: 100px
+    padding-top: 0
     &:after
         content: ''
         width: 75px
@@ -30,6 +30,7 @@
         max-width: 160px
         margin: auto
     &s
+        padding-top: 0
         &__title
             margin: auto
             margin-bottom: 59px
@@ -60,6 +61,40 @@
         &s
             &-block
                 justify-content: center
+@media (max-width: 1200px)
+    .step
+        margin-bottom: 30px
+        flex-basis: 50%
+        &:after
+            display: none
+        &s
+            &-block
+                justify-content: center
+@media (max-width: 768px)
+    .steps
+        padding-top: 0
+        padding-bottom: 50px
+        &__title
+            font-family: "Museo Sans Cyrl 700"
+            font-size: 18px
+            line-height: 1.2
+            margin-top: 0
+            line-height: 22px
+            margin-bottom: 8px
+        &__subtitle
+            font-family: "Museo Sans Cyrl 300"
+            font-size: 14px
+            line-height: 45px
+            margin-bottom: 20px
+    .step
+        padding-bottom: 0
+        margin-bottom: 32px
+        &__text
+            font-family: "Museo Sans Cyrl 300"
+            font-size: 12px
+            line-height: 16px
+        &__image
+            margin-bottom: 22px
        
 
-    
+            

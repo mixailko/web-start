@@ -1,0 +1,51 @@
+.info
+    &-BOX
+        display: flex
+    &-box
+        background-color: #f7f7f7 
+        margin: 0 15px 0 15px
+        &__image
+            width: 100%
+            height: 265px 
+    &-box1
+        display: block
+        max-width: 370px
+        height: 145px
+        background-color: #f7f7f7 
+        &__title
+            display: block
+            padding: 27px 55px 63px 26px 
+            font-family: "Museo Sans Cyrl 300"
+            font-size: 16px
+            line-height: 23px
+
+@media (max-width: 1200px)
+    .info
+        &-BOX
+            display: flex
+            flex-wrap: wrap 
+        &-box
+            margin-left: auto
+            margin-right: auto
+            margin-bottom: 30px
+            &-box1
+@media (max-width: 768px)
+    .info
+        padding-top: 59px
+        padding-bottom: 35px
+        &-BOX
+            
+        &-box
+            max-width: 270px
+            &__image
+                height: 191px
+        &-box1
+            height: 110px
+            &__title
+                font-size: 12px
+                font-weight: 400
+                line-height: 16.83px
+                padding: 15px 40px 33px 19px
+                
+
+            

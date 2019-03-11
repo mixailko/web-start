@@ -16,12 +16,10 @@
         display: flex
         justify-content: space-between
 .slider
-    border: 0
-    &__image:last-child
-        margin: auto
-        &:last-child
-            padding-right: 0
-    
+    &__item
+        &:focus
+            outline: none
+
 
 @media (max-width: 1200px)
     .portfolio
@@ -29,6 +27,23 @@
              margin-bottom: 41px
     .section
         padding: 43px 0 64px 0
+@media (max-width: 768px)
+    .portfolio
+        &__title
+            font-size: 18px
+            line-height: 23px
+            max-width: 290px 
+        &__arrows
+            margin-top: 40px
+    .section
+        padding: 40px 0 64px 0
+    .slider
+        &__image
+            max-width: 246px
+            max-height: 186px
+            margin-left: auto
+            margin-right: auto
+        
         
     
 
