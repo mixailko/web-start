@@ -1,0 +1,71 @@
+.footer
+    position: relative
+.map
+    position: absolute
+    left: 0
+    top: 0
+    width: 50%
+.contacts
+    flex-basis: 50%
+    padding-top: 100px
+    padding-left: 200px
+    &__title
+        font-family: "Museo Sans Cyrl 700"
+        font-size: 22px
+        line-height: 33px
+        max-width: 300px
+        margin-bottom: 100px
+    &-block
+        display: flex
+        justify-content: flex-end
+    &-list
+        padding: 0
+        list-style: none
+        &__icon
+            width: 20px
+            height: 20px
+            text-align: center
+            line-height: 20px
+            margin-right: 30px
+        &__item
+            display: flex
+            align-items: flex-start
+            margin-bottom: 39px
+        &__text
+            font-family: "Museo Sans Cyrl 300"
+            font-size: 16px
+            line-height: 26px
+.tetx
+    font-family: "Museo Sans Cyrl 700"
+.phone
+    text-decoration: none
+    color: #000000
+
+@media (max-width: 768px)
+    .map
+        width: 100%
+        position: relative
+        order: 2
+    .footer
+        &-block
+            display: flex
+            flex-wrap: wrap
+    .contacts
+        padding: 0
+        margin: auto
+        &__title
+            font-family: "Museo Sans Cyrl 700"
+            font-size: 18px
+            line-height: 1.4
+            width: 270px
+            margin-top: 60px
+        &-block
+            order: 1
+            position: relative
+        &-list
+            &__text
+                line-height: 1.2
+.text
+    font-size: 16px
+
+            

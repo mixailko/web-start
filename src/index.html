@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/animate.css">
     <title>Document</title>
+    <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(52792243, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/52792243" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
     <nav class="navbar">
@@ -88,8 +89,8 @@
                     </span>
                     <!-- /.section-subtitel -->
                     <form action="#" id="offer-form" class="form offer__form">
-                        <input type="text" class="input offer__input" name="username" placeholder="Ваше имя">
-                        <input type="tel" class="input offer__input phone" name="phone" placeholder="Ваш телефон">
+                        <input type="text" class="input offer__input" name="username1" placeholder="Ваше имя">
+                        <input type="tel" class="input offer__input phone" name="phone1" placeholder="Ваш телефон">
                         <button class="button offer__button">Получить бесплатный дизайн-проект</button>
                     </form>  
                     
@@ -425,6 +426,62 @@
             <!-- /.container -->
         </section>
         <!-- /.section brif -->
+        <footer class="footer">
+            <div class="footer-block">
+                    <div class="map" id="map">
+                            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Acf392465bdb950d487a71ff8db08a1ecfd058eb1a203213d67a74f1fd19a6334&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=fals"></script>
+                    </div>
+                    <div class="container contacts-block">
+                        <div class="contacts">
+                            <h3 class="contacts__title">Приезжайте к нам в гости!
+                                Проконсультируем Вас по всем вопросам ремонта
+                             </h3>
+                             <ul class="contacts-list">
+                                 <li class="contacts-list__item">
+                                     <span class="contacts-list__icon">
+                                         <img src="img/map_1.png" alt="" srcset="">
+                                     </span>
+                                     <!-- /.contacts-list__icon -->
+                                     <span class="contacts-list__text">г. Москва <br>
+                                          <strong class="text">ул. Ленинга, д. 10,
+                                                корпус 2, оф. 308</strong>       
+                                     </span> 
+                                     <!-- /.contacts-list__text -->
+                                </li>
+                                 <!-- /.contacts-list__item -->
+                                 <li class="contacts-list__item">
+                                     <span class="contacts-list__icon">
+                                            <img src="img/map_2.png" alt="" srcset="">
+                                     </span>
+                                     <!-- /.contacts-list__icon -->
+                                     <span class="contacts-list__text">Режим работы: <br>
+                                            <strong class="text">с 9:00 до 18:00</strong>
+                                            </span> 
+                                     <!-- /.contacts-list__text -->
+                                </li>
+                                 <!-- /.contacts-list__item -->
+                                 <li class="contacts-list__item">
+                                     <span class="contacts-list__icon">
+                                            <img src="img/map_3.png" alt="" srcset="">
+                                     </span>
+                                     <!-- /.contacts-list__icon -->
+                                     <span class="contacts-list__text">Телефон: <br>   
+                                            <strong class="text"><a href="tel:+7(495) 42-251-31" class="phone">+ 7 (495) 42-251-31</a></strong></span> 
+                                     <!-- /.contacts-list__text -->
+                                </li>
+                                 <!-- /.contacts-list__item -->
+                             </ul>
+                             <!-- /.contacts-list -->
+                            <!-- /.contacts__title -->
+                        </div>
+                        <!-- /.contacts -->
+                    </div>
+                    <!-- /.container contacts-block -->
+                    <!-- /#map.map -->
+            </div>
+            <!-- /.footer-block -->
+        </footer>
+        <!-- /.footer -->
     </main>
     <div class="modal" id="modal">
         <div class="modal-dialog">
@@ -489,7 +546,7 @@
           $('#offer-form').validate({
             errorClass: "invalid",
               rules: {
-                  username: {
+                  username1: {
                       required: true,
                       minlength: 2,
                       maxlength: 15
@@ -498,13 +555,13 @@
                       required: true,
                       email: true
                   },
-                  phone: {
+                  phone1: {
                       required: true,
-                      phone: true
+                      phone1: true
                   }
               },
               messages: {
-                  username: {
+                  username1: {
                     required: "Укажите имя",
                     minlength: jQuery.validator.format("Осталось {0} символа"),
                     maxlength: jQuery.validator.format("не более {0} символов"),
@@ -514,14 +571,14 @@
                     email:"Укажите свой email",
                     required: "Заполните поле"
                   },
-                  phone: {
+                  phone1: {
                     phone: "Укажите свой номер телефона",
                     required: "Заполните поле"
                   }  
               }
           });
 
-          $('.phone').mask('+7 (999) 999-99-99',{placeholder:" "})
+          $('.phone1, .phone').mask('+7 (999) 999-99-99',{placeholder:" "})
 
           $('.slider').slick({
             slidesToShow: 3,

@@ -64,8 +64,38 @@ img
     position: relative
     border: 0
     bottom: 10px
+#username1-error, #phone1-error
+    position: absolute
+    margin-top: 73px 
+    margin-left: -180px
+    text-align: center
+    border: 0
+#phone1-error
+    margin-left: -165px
+@media (max-width: 1200px)
+    #username1-error, #phone1-error
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        border: 0
+        bottom: 7px
+        margin-top: 7px
+        margin-left: 0
+
 @media (max-width: 768px)
     #username-error, #phone-error, #email-error
         bottom: 7px
+    #username1-error, #phone1-error
+        display: flex
+        justify-content: center
+        align-items: center
+        position: relative
+        border: 0
+        bottom: 7px
+        margin-top: 7px
+        margin-left: 0
+    #offer-form
+        padding-top: 0
     
 
